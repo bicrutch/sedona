@@ -1,8 +1,0 @@
-.header {
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  -webkit-transition-property: padding, color, border;
-  -o-transition-property: padding, color, border;
-  transition-property: padding, color, border;
-}

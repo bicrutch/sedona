@@ -1,0 +1,56 @@
+// база цветов
+
+$white: #ffffff;
+
+// цвета для меню
+$col-black: #000; // main menu
+$col-mm-hover: #81b3d2; // main menu hover
+$col-mm-active: #766357; // main menu active
+$col-mm-acthov: #604e43; // main menu active hover
+$col-mm-down: #cacaca; // main menu down
+$col-mm-actdown: #dbd8d5; // main menu active down
+
+// кнопки
+$col-blue-btn: #81b3d2; // blue button
+$col-blue-btn-hover: #669ec0; // blue button hover
+$col-blue-btn-down: #5496bd; // blue button down
+$col-blue-btn-dis: #e5e5e5; // blue button disable
+$txt-btn-ghost: #94b9d2; // blue button disable txt
+
+// социальные иконки
+$col-icon: #81b3d2; // default background
+$col-icon-hover: #669ec0; // icon hover
+$col-icon-down: #5496bd; // icon down
+$col-icon-ghost: #88b6d1; // txt gost down
+
+// мобильное меню
+$col-mobile-m: #81b3d2;
+$col-mobile-m-hover: #669ec0;
+$col-mobile-m-down: #5496bd;
+$col-mm-burger: #81b3d2;
+$col-mm-close: #ffffff;
+
+// поля формы
+$col-input: #f2f2f2;
+$col-input-hover: #e5e5e5;
+$col-input-active-border: #e5e5e5;
+
+// радиобаттоны круглые:
+$col-radio: #f2f2f2;
+$col-radio-hover: #e5e5e5;
+$col-radio-down: #d5d5d5;
+
+// радиобаттоны квадратные:
+$col-radio: #f2f2f2;
+$col-radio-hover: #e5e5e5;
+$col-radio-down: #d5d5d5;
+
+// мобильные кнопки контроля
+$col-mobile-btn: #5c6870;
+$col-mobile-btn-hover: #333333;
+$col-mobile-btn-down: #b8b8b8;
+
+// десктопные кнопки контроля
+$col-desktop-btn: #ffffff;
+$col-desktop-btn-hover: #c2c2c2;
+$col-desktop-btn-down: #949494;
