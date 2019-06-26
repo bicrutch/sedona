@@ -1,0 +1,103 @@
+// миксины для эффектов transition
+
+$ease-1s:        0.1s ease;
+$ease-2s:        0.2s ease;
+$ease-3s:        0.3s ease;
+$ease-4s:        0.4s ease;
+
+$easeIn-1:       0.1s ease-in;
+$easeIn-2:       0.2s ease-in;
+$easeIn-3:       0.3s ease-in;
+$easeIn-4:       0.4s ease-in;
+
+$easeInOut-1:    0.1s ease-in-out;
+$easeInOut-2:    0.2s ease-in-out;
+$easeInOut-3:    0.3s ease-in-out;
+$easeInOut-4:    0.4s ease-in-out;
+
+// ease
+@mixin ease-1s ($properties...) {
+  transition: $ease-1s;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-2s ($properties...) {
+  transition: $ease-2s;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-3s ($properties...) {
+  transition: $ease-3s;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-4s ($properties...) {
+  transition: $ease-4s;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+// easeIn
+@mixin ease-in-1s ($properties...) {
+  transition: $easeIn-1;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-in-2s ($properties...) {
+  transition: $easeIn-2;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-in-3s ($properties...) {
+  transition: $easeIn-3;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-in-4s ($properties...) {
+  transition: $easeIn-4;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+// easeInOut
+@mixin ease-in-out-1s ($properties...) {
+  transition: $easeInOut-1;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-in-out-2s ($properties...) {
+  transition: $easeInOut-1;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-in-out-3s ($properties...) {
+  transition: $easeInOut-1;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
+
+@mixin ease-in-out-4s ($properties...) {
+  transition: $easeInOut-1;
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
