@@ -1,5 +1,4 @@
 .header{
-  @include ease-in-2s(padding, color, background, width);
-
+  @include ease-in-out($easeInOut-3s, padding, color, border);
 
 }
