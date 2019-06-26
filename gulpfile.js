@@ -34,15 +34,15 @@ gulp.task('browser-sync', function() {
 });
 
 //Таск для всех сприптов
-gulp.task('scripts', function() {
-  return gulp.src([
-    'app/libs/jquery/dist/jquery.min.js',
-    'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
-    ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
-});
+// gulp.task('scripts', function() {
+//   return gulp.src([
+//     'app/libs/jquery/dist/jquery.min.js',
+//     'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+//     ])
+//     .pipe(concat('libs.min.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('app/js'));
+// });
 
 gulp.task('code', function() {
   return gulp.src('app/*.html')
@@ -50,7 +50,7 @@ gulp.task('code', function() {
 });
 
 gulp.task('css-libs', function() {
-  return gulp.src('app/css/libs.css')
+  return gulp.src('app/css/*.css')
     .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'));
@@ -74,8 +74,7 @@ gulp.task('img', function() {
 gulp.task('prebuild', async function() {
 
   var buildCss = gulp.src([
-    'app/css/main.css',
-    'app/css/libs.min.css'
+    'app/css/main.css'
     ])
   .pipe(gulp.dest('dist/css'))
 
@@ -97,8 +96,8 @@ gulp.task('clear', function (callback) {
 gulp.task('watch', function() {
   gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
   gulp.watch('app/*.html', gulp.parallel('code'));
-  gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
+  gulp.watch(['app/js/*.js']);
 });
 
-gulp.task('default', gulp.parallel('css-libs', 'sass', 'scripts', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass', 'scripts'));
+gulp.task('default', gulp.parallel('css-libs', 'sass', 'browser-sync', 'watch'));
+gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass'));
