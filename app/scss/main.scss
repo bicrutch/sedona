@@ -1,5 +1,11 @@
-@import "global/global.scss";
+@import "global/global";
 
 // основные файлы:
+<<<<<<< HEAD
 @import "block/_header.scss";
 @import "block/_promo_sedona.scss";
+=======
+@import "block/header";
+@import "block/menu";
+@import "block/_about.scss";
+>>>>>>> 882523e95d01246e46805db0425678aa56986f7f
