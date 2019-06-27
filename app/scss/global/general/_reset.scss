@@ -1,0 +1,27 @@
+// ресайзим
+
+/*
+  ! - подсказка!
+  ~ если хотим чтобы свойство записаное в root,
+  наследовалось то добавляем к нужному блоку:
+      ----> box-sizing: content-box; <----
+
+
+*/
+
+:root{
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after{
+  box-sizing: inherit;
+}
+
+html,
+body{
+  // box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}

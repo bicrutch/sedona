@@ -1,0 +1,40 @@
+// Кнопки, храним и описываем
+
+button{
+	padding: 0;
+	margin: 0;
+}
+
+.btn{
+	max-width: 455px;
+			width: 100%;
+			height: 55px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: none;
+	padding: 8px 12px;
+	text-transform: uppercase;
+	@include ptsans-bold;
+		&:focus{
+			outline-style: solid;
+			outline-width: 2px;
+			outline-color: $col-outline;
+		}
+}
+
+.btn-blue{
+	@extend .btn;
+	background: $col-blue-btn;
+	color: $white;
+	@include ease($easeIn-2s, background, color, outline);
+		&:hover{
+			background: $col-blue-btn-hover;
+		}
+		&:active{
+			background: $col-blue-btn-down;
+			color: $txt-btn-ghost;
+		}
+}
+

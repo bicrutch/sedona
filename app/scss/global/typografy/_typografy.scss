@@ -1,0 +1,36 @@
+@import "_resize.scss";
+
+@mixin font-family{
+  @font-face{
+    font-family: 'PT Sans', Arial, sans-serif;
+    src: url(../fonts/ptsans.woff);
+  }
+
+  @font-face{
+    font-family: 'PT Sans', Arial, sans-serif;
+    src: url(../fonts/PT_Sans-Web_regular);
+  }
+}
+
+@mixin ptsans-regular{
+  font:{
+    family: 'PT Sans', sans-serif;
+    weight: 400;
+  }
+}
+
+@mixin ptsans-bold{
+  font:{
+    family: 'PT Sans', sans-serif;
+    weight: 700;
+  }
+}
+
+@include font-family;
+
+html,
+body{
+  @include ptsans-regular;
+  color: $light-black;
+}
+
