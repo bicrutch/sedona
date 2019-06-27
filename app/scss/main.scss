@@ -1,4 +1,5 @@
-@import "global/global.scss";
+@import "global/global";
 
 // основные файлы:
-@import "block/_header.scss";
+@import "block/header";
+@import "block/menu";

@@ -74,6 +74,8 @@ body {
   min-width: 320px;
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 22px;
+  padding-right: 22px;
   position: relative;
   -webkit-box-shadow: 0 0 20px #ccc;
           box-shadow: 0 0 20px #ccc;
@@ -130,6 +132,88 @@ button {
 }
 
 .btn-blue:active {
+  background: #5496bd;
+  color: #94b9d2;
+}
+
+.header {
+  width: 100%;
+  height: 445px;
+  background-image: url(../img/bg-back-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.main_logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50%;
+  bottom: 0;
+  margin-left: -70px;
+}
+
+.drop-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 225px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.drop-menu-item {
+  padding-top: 15px;
+  border-bottom: 1px solid #5496bd;
+}
+
+.drop-menu-link {
+  color: #ffffff;
+}
+
+.drop-menu-close {
+  position: absolute;
+  top: 15px;
+  right: 22px;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  background-image: url(../svg/icon-cross.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.drop--btn {
+  width: 100%;
+  height: 25%;
+  background: #81b3d2;
+}
+
+.drop--btn:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #4b7894;
+}
+
+.drop--btn:hover {
+  background: #669ec0;
+}
+
+.drop--btn:active {
   background: #5496bd;
   color: #94b9d2;
 }
