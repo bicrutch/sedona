@@ -135,3 +135,56 @@ button {
   background: #5496bd;
   color: #94b9d2;
 }
+
+.icons, .icon-tw, .icon-face, .icon-you {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 46px;
+  width: 100%;
+  height: 48px;
+  background: #81b3d2;
+}
+
+.icons:hover, .icon-tw:hover, .icon-face:hover, .icon-you:hover {
+  background: #669ec0;
+}
+
+.icons:focus, .icon-tw:focus, .icon-face:focus, .icon-you:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #4b7894;
+}
+
+.icon-tw::before {
+  content: '';
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  background: url("../img/icons/twitter.png") no-repeat;
+}
+
+.icon-face::before {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 19px;
+  background: url("../img/icons/facebook.png") no-repeat;
+}
+
+.icon-you::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background: url("../img/icons/youtob.png") no-repeat;
+}
