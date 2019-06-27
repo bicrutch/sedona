@@ -1,0 +1,29 @@
+@mixin shape_top {
+    &::before{
+        content: '';
+        max-width: 1201px;
+        width: 100%;
+        height: 57px;
+        position: absolute;
+            left: 0;
+            right: 0;
+            top: -57px;
+        display: block;
+        background: url('../svg/bg-intro-triangle-desktop.svg')no-repeat center;
+    }
+}
+
+@mixin shape_bottom {
+    &::after{
+        content: '';
+        max-width: 765px;
+        width: 100%;
+        height: 36px;
+        position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -15px;
+        display: block;
+        background: url('../svg/bg-triangle.svg')no-repeat bottom;
+    }
+}
