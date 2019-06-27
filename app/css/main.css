@@ -367,3 +367,62 @@ button {
 .promo_one .promo-body .promo-city {
   max-width: 100%;
 }
+
+.promo_sedona {
+  padding: 0 20px 35px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.promo_sedona .headline,
+.promo_sedona .subline {
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.promo_sedona .headline {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.promo_sedona .subline {
+  font-size: 14px;
+  color: #333333;
+}
+
+.promo_one {
+  text-align: center;
+}
+
+.promo_one .promo-header {
+  background: #81b3d2 url(../svg/bg-triangle.svg) no-repeat center top;
+  padding: 45px 20px 45px;
+}
+
+.promo_one .promo-header .promo-headline,
+.promo_one .promo-header .eff,
+.promo_one .promo-header .short-promo {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo_one .promo-header .promo-headline {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.promo_one .promo-header .short-promo {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.promo_one .promo-body {
+  max-height: 260px;
+}
+
+.promo_one .promo-body .promo-city {
+  max-width: 100%;
+}
