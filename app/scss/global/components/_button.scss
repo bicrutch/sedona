@@ -38,3 +38,57 @@ button{
 		}
 }
 
+// социальные кнопки:
+// ul>li>a
+
+.icons{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	// position: relative;
+	max-width: 46px;
+			width: 100%;
+			height: 48px;
+	background: $col-icon;
+		&:hover{
+			background: $col-icon-hover;
+		}
+		&:focus{
+			outline-style: solid;
+			outline-width: 2px;
+			outline-color: $col-outline;
+		}
+}
+
+.icon-tw{
+	@extend .icons;
+		&::before{
+			content: '';
+			display: inline-block;
+			width: 19px;
+			height: 15px;
+			background: url('../img/icons/twitter.png') no-repeat;
+		}
+}
+
+.icon-face{
+	@extend .icons;
+		&::before{
+			content: '';
+			display: inline-block;
+			width: 9px;
+			height: 19px;
+			background: url('../img/icons/facebook.png') no-repeat;
+		}
+}
+
+.icon-you{
+	@extend .icons;
+		&::before{
+			content: '';
+			display: inline-block;
+			width: 20px;
+			height: 14px;
+			background: url('../img/icons/youtob.png') no-repeat;
+		}
+}
