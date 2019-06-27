@@ -74,8 +74,6 @@ body {
   min-width: 320px;
   max-width: 1280px;
   margin: 0 auto;
-  padding-left: 22px;
-  padding-right: 22px;
   position: relative;
   -webkit-box-shadow: 0 0 20px #ccc;
           box-shadow: 0 0 20px #ccc;
@@ -197,6 +195,25 @@ button {
   background-repeat: no-repeat;
 }
 
+.header__content {
+  width: 100%;
+  height: inherit;
+  text-align: center;
+}
+
+.header__content::after {
+  content: '';
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 63px;
+  background-image: url("../img/bg-intro-triangle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .nav {
   width: 100%;
   height: 60px;
@@ -212,9 +229,25 @@ button {
   margin-left: -70px;
 }
 
+.drop-menu-toggle {
+  position: absolute;
+  top: 15px;
+  right: 22px;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  background-image: url(../svg/icon-menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 .drop-menu {
   position: fixed;
-  top: 0;
+  top: -230px;
   left: 0;
   right: 0;
   bottom: 0;
