@@ -1,0 +1,55 @@
+.features{
+	width: 100%;
+
+	
+	&__header{
+		position: relative;
+		text-align: center;
+		margin-top: -13px;
+		padding: 45px 20px 45px;
+		background: $col-mm-hover url('../svg/bg-triangle.svg') no-repeat center top;
+
+			&-headline,
+			&-descript{
+				text-transform: uppercase;
+				color: $white;
+			}
+
+			&-headline{
+				font-size: 22px;
+				margin-bottom: 20px;
+			}
+
+			&-descript{
+				font-size: 14px;
+				margin-top: 24px;
+			}
+
+			.ablax{
+				color: $white;
+			}
+	}
+
+	&__box{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 45px 20px 45px;
+		
+	}
+
+	.burger--icon{
+
+	}
+
+	.house--icon{
+
+	}
+
+	.gift--icon{
+
+	}
+
+
+}
