@@ -1,8 +1,11 @@
 @import "global/_global";
 
 // основные файлы:
-@import "block/header";
+@import "block/header/header";
 @import "block/menu";
-@import "block/intro";
+@import "block/intro/intro";
 @import "block/promo-1";
 @import "block/feature";
+
+// медиа запросы:
+@import "media/media";
