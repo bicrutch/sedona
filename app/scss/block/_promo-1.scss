@@ -1,0 +1,90 @@
+.promo-1 {
+  width: 100%;
+  height: 470px;
+
+  &__header{
+    width: 100%;
+    height: 210px;
+    padding-top: 60px;
+    background-color: $col-mm-hover;
+    text-align: center;
+
+      &-headline,
+      &-descript{
+        text-transform: uppercase;
+        color: $white;
+      }
+
+      &-headline{
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      &-descript{
+        font-size: 14px;
+        margin-top: 24px;
+      }
+
+      .ablax{
+        color: $white;
+      }
+  }
+
+  &__img-block {
+    width: 100%;
+    height: 260px;
+
+    &-img {
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 420px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+
+
+    &__box {
+      width: 100%;
+      height: 110px;
+      padding-left: 50px;
+
+      &-headline {
+        margin-bottom: 25px;
+        font-style: 18px;
+        text-transform: uppercase;
+        line-height: 2;
+      }
+
+      &-descript {
+        font-style: 14px;
+      }
+    } //promo-1__box
+  } //promo-1__content
+
+
+} //promo-1
+
+.burger--icon{
+  background-image: url(../svg/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40px 40px;
+}
+
+.house--icon{
+  background-image: url(../svg/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40px 40px;
+}
+
+.gift--icon{
+  background-image: url(../svg/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40px 40px;
+}

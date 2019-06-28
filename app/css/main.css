@@ -79,6 +79,27 @@ body {
           box-shadow: 0 0 20px #ccc;
 }
 
+.self-container {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.promo__content--flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 button {
   padding: 0;
   margin: 0;
@@ -200,8 +221,7 @@ button {
   width: 100%;
   height: 445px;
   background-image: url(../img/bg-back-mobile.jpg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -213,23 +233,13 @@ button {
 }
 
 .header__content-slogan {
-  width: 280px;
-  margin-top: 35px;
-}
-
-.bottom_shape {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
   width: 100%;
-  height: 60px;
-  background: url("../svg/intro-triangle.svg") no-repeat center bottom;
-  -webkit-background-size: 100% auto;
-          background-size: 100% auto;
+  margin-top: 35px;
 }
 
 .nav {
   position: fixed;
+  z-index: 999;
   width: 100%;
   height: 60px;
   background-color: #ffffff;
@@ -255,8 +265,7 @@ button {
   outline: 0;
   background-color: transparent;
   background-image: url(../svg/icon-menu.svg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -294,8 +303,7 @@ button {
   outline: 0;
   background-color: transparent;
   background-image: url(../svg/icon-cross.svg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -325,97 +333,142 @@ button {
   color: #94b9d2;
 }
 
-.promo_sedona {
-  padding: 0 20px 35px;
+.intro {
+  width: 100%;
+  height: 220px;
+  margin-top: 45px;
   text-align: center;
   background: #ffffff;
 }
 
-.promo_sedona .headline,
-.promo_sedona .subline {
+.intro__content {
+  width: 100%;
+  height: auto;
+}
+
+.intro__content-headline, .intro__content-subline {
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.promo_sedona .headline {
+.intro__content-headline {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-.promo_sedona .subline {
+.intro__content-subline {
   font-size: 14px;
   color: #333333;
 }
 
-.promo_one {
+.promo-1 {
+  width: 100%;
+  height: 470px;
+}
+
+.promo-1__header {
+  width: 100%;
+  height: 210px;
+  padding-top: 60px;
+  background-color: #81b3d2;
   text-align: center;
 }
 
-.promo_one .promo-header {
-  background: #81b3d2 url(../svg/bg-triangle.svg) no-repeat center top;
-  padding: 45px 20px 45px;
-}
-
-.promo_one .promo-header .promo-headline,
-.promo_one .promo-header .eff,
-.promo_one .promo-header .short-promo {
+.promo-1__header-headline, .promo-1__header-descript {
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.promo_one .promo-header .promo-headline {
-  font-size: 20px;
-  margin-bottom: 18px;
+.promo-1__header-headline {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
-.promo_one .promo-header .short-promo {
-  margin-top: 24px;
+.promo-1__header-descript {
   font-size: 14px;
-  line-height: 24px;
+  margin-top: 24px;
 }
 
-.promo_one .promo-body {
-  max-height: 260px;
+.promo-1__header .ablax {
+  color: #ffffff;
 }
 
-.promo_one .promo-body .promo-city {
-  max-width: 100%;
+.promo-1__img-block {
+  width: 100%;
+  height: 260px;
+}
+
+.promo-1__img-block-img {
+  width: inherit;
+  height: inherit;
+}
+
+.promo-1__content {
+  width: 100%;
+  height: 420px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.promo-1__content__box {
+  width: 100%;
+  height: 110px;
+  padding-left: 50px;
+}
+
+.promo-1__content__box-headline {
+  margin-bottom: 25px;
+  font-style: 18px;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.promo-1__content__box-descript {
+  font-style: 14px;
+}
+
+.burger--icon {
+  background-image: url(../svg/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40px 40px;
+}
+
+.house--icon {
+  background-image: url(../svg/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40px 40px;
+}
+
+.gift--icon {
+  background-image: url(../svg/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40px 40px;
 }
 
 .features {
   width: 100%;
 }
 
-.features__header {
-  position: relative;
-  text-align: center;
-  margin-top: -13px;
-  padding: 45px 20px 45px;
-  background: #81b3d2 url("../svg/bg-triangle.svg") no-repeat center top;
-}
-
-.features__header-headline, .features__header-descript {
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.features__header-headline {
+.features-headline {
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-.features__header-descript {
+.features-descript {
   font-size: 14px;
   margin-top: 24px;
 }
 
-.features__header .ablax {
+.features .ablax {
   color: #ffffff;
 }
 
-.features__box {
+.box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

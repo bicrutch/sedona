@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
     <header id="header" class="header">
-        <nav class="nav">
+        <nav class="nav self-container">
           <img src="svg/logo-sedona-mobile.svg" alt="sedona logo" class="main_logo" width="140" height="71">
           <!--dropdown menu-->
           <button class="drop-menu-toggle"></button>
@@ -24,51 +24,50 @@
           </ul>
         <!-- end dropdown menu -->
         </nav>
-        <section class="header__content">
+        <section class="header__content self-container">
           <img src="svg/text-sedona-index.svg" alt="" class="header__content-slogan">
         </section>
-        <svg version="1.1" class="bottom_shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="100%" height="16px" viewbox="0 0 320 16" enable-background="new 0 0 320 16" xml:space="preserve" preserveaspectratio="none">
-        <g>
-            <polygon fill="#ffffff" points="0,0 0,16 160,16 "/>
-            <polygon fill="#ffffff" points="160,16 320,16 320,0"/>
-        </g>
-        </svg>
-
     </header>
 
     <main class="content">
-      <section class="promo_sedona">
-        <h2 class="headline">
-          Седона - небольшой городок в аризоне,<br>заслуживающий большего!
-        </h2>
-        <p class="subline">
-          Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
-        </p>
+      <section class="intro">
+        <div class="intro__content self-container">
+          <h2 class="intro__content-headline">
+            Седона - небольшой городок в аризоне, заслуживающий большего!
+          </h2>
+          <p class="intro__content-subline">
+            Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
+          </p>
+        </div>
       </section>
 
-
-      <section class="features">
-
-        <div class="features__header">
-          <h2 class="features__header-headline">настоящий городок</h2>
-          <span class="ablax"> -  № - </span>
-          <p class="features__header-descript">седона не аттракцион для туристов, там течет своя жизнь</p>
+      <section class="promo-1">
+        <div class="promo-1__header self-container">
+          <h2 class="promo-1__header-headline">настоящий городок</h2>
+          <span class="ablax"> -  №1 - </span>
+          <p class="promo-1__header-descript">седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="promo-1__img-block">
+          <img src="img/photo-city-mobile.jpg" alt="sedona city photo" class="promo-1__img-block-img">
         </div>
 
-        <div class="features__box burger--icon">
-          <span class="features__box-headline">Жилье</span>
-          <span class="features__box-descript">Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
-        </div>
+        <!-- features box -->
 
-        <div class="features__box house--icon">
-          <span class="features__box-headline">СУВЕНИРЫ</span>
-          <span class="features__box-descript">Не только китайского, но и местного производства!</span>
-        </div>
+        <div class="promo-1__content self-container promo__content--flex">
+          <div class="promo-1__content__box house--icon box--flex">
+            <h2 class="promo-1__content__box-headline">жильё</h2>
+            <p class="promo-1__content__box-descript">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
 
-        <div class="features__box gift--icon">
-          <span class="features__box-headline">ЕДА</span>
-          <span class="features__box-descript">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</span>
+          <div class="promo-1__content__box gift--icon box--flex">
+            <h2 class="promo-1__content__box-headline">сувениры</h2>
+            <p class="promo-1__content__box-descript">Не только китайского, но и местного производства!</p>
+          </div>
+
+          <div class="promo-1__content__box burger--icon box--flex">
+            <h2 class="promo-1__content__box-headline">еда</h2>
+            <p class="promo-1__content__box-descript">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </div>
         </div>
       </section>
     </main>
