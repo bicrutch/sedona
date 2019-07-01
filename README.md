@@ -1,4 +1,4 @@
 # Arrow
 Arrow business mokup
 
-https://sardormutalov.github.io/bicrutch/sedona/app/index.html
+https://sardormutalov.github.io/bicrutch/sedona/index.html
