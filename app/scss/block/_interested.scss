@@ -1,0 +1,36 @@
+.interested {
+	padding-top: 32px;
+	padding-bottom: 45px;
+	background-color: $white;
+
+	&__content{
+		text-align: center;
+		line-height: 25px;
+
+		&-headline,
+		&-subline{
+			text-transform: uppercase;
+		}
+
+		&-headline{
+			font-size: 22px;
+			margin-bottom: 32px;
+		}
+
+		&-subline{
+			font-size: 14px;
+		}
+
+		&-button{
+			margin-top: 40px;
+			font-size: 18px;
+		}
+	}
+
+
+
+
+
+
+
+}
