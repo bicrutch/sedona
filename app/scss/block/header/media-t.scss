@@ -1,0 +1,59 @@
+/* header block tablet media querys */
+
+@media only screen and (min-width: 768px)
+{
+  .header {
+    height: 520px;
+
+    .nav {
+      position: static;
+
+      &__menu {
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1em;
+        @include ptsans-bold;
+
+        &-item {
+          width: 25%;
+        }
+
+        &-link {
+          @include ease($easeIn-2s, background, color, outline);
+
+          &:hover {
+            color: $col-blue-btn-hover;
+          }
+        }
+
+        .menu-item--left {
+          text-align: left;
+        }
+
+        .menu-item--right {
+          text-align: right;
+        }
+      }
+    }
+
+    &__content {
+
+      &-slogan {
+        margin-top: 10px;
+      }
+    }
+  }
+
+
+
+  .drop-menu-toggle {
+    display: none;
+  }
+
+  .drop-menu {
+    display: none;
+  }
+}

@@ -8,15 +8,15 @@
   background-repeat: no-repeat;
 
   &__content {
-    padding-top: 60px;
-    width: 100%;
+    padding-top: 1em;
+    width: inherit;
     height: inherit;
     text-align: center;
 
     &-slogan {
       min-width: 280px;
       max-width: 480px;
-      margin-top: 35px;
+      margin-top: 65px;
     }
   }
 }
@@ -27,6 +27,10 @@
   width: 100%; // 95.1% - для десктопа!
   height: 60px;
   background-color: $white;
+
+  &__menu {
+    display: none;
+  }
 
 }
 
@@ -39,5 +43,6 @@
   margin-left: -70px;
 }
 
-@import "media-tablet";
-@import "media-desktop";
+// media querys
+@import "media-t";
+@import "media-d";

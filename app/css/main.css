@@ -221,14 +221,13 @@ button {
   width: 100%;
   min-height: 445px;
   background-image: url(../img/bg-back-mobile.jpg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .header__content {
-  padding-top: 60px;
-  width: 100%;
+  padding-top: 1em;
+  width: inherit;
   height: inherit;
   text-align: center;
 }
@@ -236,7 +235,7 @@ button {
 .header__content-slogan {
   min-width: 280px;
   max-width: 480px;
-  margin-top: 35px;
+  margin-top: 65px;
 }
 
 .nav {
@@ -245,6 +244,10 @@ button {
   width: 100%;
   height: 60px;
   background-color: #ffffff;
+}
+
+.nav__menu {
+  display: none;
 }
 
 .main_logo {
@@ -257,6 +260,67 @@ button {
 }
 
 /* header block tablet media querys */
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 520px;
+  }
+  .header .nav {
+    position: static;
+  }
+  .header .nav__menu {
+    height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1em;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+  }
+  .header .nav__menu-item {
+    width: 25%;
+  }
+  .header .nav__menu-link {
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    -webkit-transition-property: background, color, outline;
+    -o-transition-property: background, color, outline;
+    transition-property: background, color, outline;
+  }
+  .header .nav__menu-link:hover {
+    color: #669ec0;
+  }
+  .header .nav__menu .menu-item--left {
+    text-align: left;
+  }
+  .header .nav__menu .menu-item--right {
+    text-align: right;
+  }
+  .header__content-slogan {
+    margin-top: 10px;
+  }
+  .drop-menu-toggle {
+    display: none;
+  }
+  .drop-menu {
+    display: none;
+  }
+}
+
+/* header block descktop media querys*/
 .drop-menu-toggle {
   position: absolute;
   top: 15px;
@@ -268,8 +332,7 @@ button {
   outline: 0;
   background-color: transparent;
   background-image: url(../svg/icon-menu.svg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -307,8 +370,7 @@ button {
   outline: 0;
   background-color: transparent;
   background-image: url(../svg/icon-cross.svg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -341,7 +403,7 @@ button {
 .intro {
   width: 100%;
   height: 220px;
-  margin-top: 45px;
+  padding-top: 7%;
   text-align: center;
   background: #ffffff;
 }
@@ -349,6 +411,7 @@ button {
 .intro__content {
   width: 100%;
   height: auto;
+  margin: auto;
 }
 
 .intro__content-headline, .intro__content-subline {
@@ -366,6 +429,16 @@ button {
 .intro__content-subline {
   font-size: 14px;
   color: #333333;
+}
+
+/* header block tablet media querys */
+@media only screen and (min-width: 768px) {
+  .intro {
+    height: 210px;
+  }
+  .intro__content {
+    width: 80%;
+  }
 }
 
 .promo-1 {
@@ -437,24 +510,21 @@ button {
   background-image: url(../svg/icon-burger.svg);
   background-repeat: no-repeat;
   background-position: top left;
-  -webkit-background-size: 40px 40px;
-          background-size: 40px 40px;
+  background-size: 40px 40px;
 }
 
 .house--icon {
   background-image: url(../svg/icon-house.svg);
   background-repeat: no-repeat;
   background-position: top left;
-  -webkit-background-size: 40px 40px;
-          background-size: 40px 40px;
+  background-size: 40px 40px;
 }
 
 .gift--icon {
   background-image: url(../svg/icon-gift.svg);
   background-repeat: no-repeat;
   background-position: top left;
-  -webkit-background-size: 40px 40px;
-          background-size: 40px 40px;
+  background-size: 40px 40px;
 }
 
 .promo-2 {

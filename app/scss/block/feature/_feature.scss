@@ -1,0 +1,38 @@
+.features{
+	width: 100%;
+
+			&-headline{
+				font-size: 22px;
+				margin-bottom: 20px;
+			}
+
+			&-descript{
+				font-size: 14px;
+				margin-top: 24px;
+			}
+
+			.ablax{
+				color: $white;
+			}
+	}
+
+.box{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 45px 20px 45px;
+
+	}
+
+	.burger--icon{
+
+	}
+
+	.house--icon{
+
+	}
+
+	.gift--icon{
+
+	}

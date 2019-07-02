@@ -4,11 +4,11 @@
 @import "block/header/header";
 @import "block/menu";
 @import "block/intro/intro";
-@import "block/promo-1";
-@import "block/promo-2";
-@import "block/interested";
-@import "block/feature";
-@import "block/footer/_footer.scss";
+@import "block/promo-1/promo-1";
+@import "block/promo-2/promo-2";
+@import "block/interested/interested";
+@import "block/feature/feature";
+@import "block/footer/footer";
 
 // медиа запросы:
-@import "media/media";
+@import "media";

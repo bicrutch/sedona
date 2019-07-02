@@ -1,0 +1,64 @@
+/*==========  Mobile First  ==========*/
+// //header
+// @import "/block/header/media-d";
+// @import "/block/header/media-t";
+// //intro
+// @import "/block/intro/media-d";
+// @import "/block/intro/media-t";
+// //feature
+// @import "/block/feature/media-d";
+// @import "/block/feature/media-t";
+// //promo-1
+// @import "/block/promo-1/media-d";
+// @import "/block/promo-1/media-t";
+// //promo-2
+// @import "/block/promo-2/media-d";
+// @import "/block/promo-2/media-t";
+// //interested
+// @import "/block/interested/media-d";
+// @import "/block/interested/media-t";
+// //footer
+// @import "/block/footer/media-d";
+// @import "/block/footer/media-t";
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+{
+
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+{
+
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+{
+  .self-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+{
+
+}
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+{
+
+}
+	/**/
