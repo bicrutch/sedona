@@ -35,12 +35,18 @@
 }
 
 .main_logo {
+  width: 140px;
+  height: 71px;
   position: absolute;
     top: 0;
     right: 0;
     left: 50%;
     bottom: 0;
-  margin-left: -70px;
+  transform: translateX(-50%);
+  background: url(../svg/logo-sedona-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 // media querys
