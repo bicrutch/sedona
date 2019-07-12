@@ -205,7 +205,8 @@ button {
   width: 100%;
   min-height: 445px;
   background-image: url(../img/bg-back-mobile.jpg);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -246,7 +247,8 @@ button {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   background: url(../svg/logo-sedona-mobile.svg);
-  background-size: contain;
+  -webkit-background-size: contain;
+          background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -324,7 +326,8 @@ button {
   outline: 0;
   background-color: transparent;
   background-image: url(../svg/icon-menu.svg);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -362,7 +365,8 @@ button {
   outline: 0;
   background-color: transparent;
   background-image: url(../svg/icon-cross.svg);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -519,7 +523,8 @@ button {
 .gift--icon {
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 40px;
+  -webkit-background-size: 40px 40px;
+          background-size: 40px;
 }
 
 .burger--icon {
@@ -572,6 +577,8 @@ button {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
   }
   .promo-1__content {
     height: 256px;
@@ -590,7 +597,8 @@ button {
   .gift--icon {
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 65px 70px;
+    -webkit-background-size: 65px 70px;
+            background-size: 65px 70px;
   }
 }
 
@@ -663,13 +671,13 @@ button {
   font-size: 14px;
 }
 
-.promo-2__content__box__borderline {
+.promo-2__content__box--borderline {
   padding-bottom: 30px;
   padding-top: 32px;
   border-bottom: 1px solid #d6d6d6;
 }
 
-.promo-2__content__box__borderline:last-child {
+.promo-2__content__box--borderline:last-child {
   border-bottom: none;
 }
 
